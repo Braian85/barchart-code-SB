@@ -54,6 +54,9 @@ function App() {
 
   return (
     <div className="container">
+      <button className="btn" onClick={handleChange}>
+        Click Me!
+      </button>
       <ChartRace
         data={data}
         backgroundColor="#000"
@@ -67,10 +70,6 @@ function App() {
           color: "rgba(255,255,255, 1)"
         }}
       />
-
-      <button className="btn" onClick={handleChange}>
-        Click Me!
-      </button>
     </div>
   );
 }
