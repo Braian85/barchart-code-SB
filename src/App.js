@@ -60,9 +60,9 @@ function App() {
       <ChartRace
         data={data}
         backgroundColor="#000"
-        width={1080}
+        width={600}
         padding={12}
-        itemHeight={15}
+        itemHeight={30}
         gap={20}
         titleStyle={{ font: "normal 400 10px Arial", color: "#fff" }}
         valueStyle={{
