@@ -14,15 +14,15 @@ function App() {
     const data = [
       {
         id: 0,
-        title: "Ayfonkarahisar",
-        value: getRandomInt(10, 90),
+        title: "GOOGL",
+        value: getRandomInt(0.2, 10),
         color: "#50c4fe"
       },
-      { id: 1, title: "Kayseri", value: 38, color: "#3fc42d" },
-      { id: 2, title: "Muğla", value: getRandomInt(10, 90), color: "#c33178" },
-      { id: 3, title: "Uşak", value: getRandomInt(10, 90), color: "#423bce" },
-      { id: 4, title: "Sivas", value: 58, color: "#c8303b" },
-      { id: 5, title: "Konya", value: 16, color: "#2c2c2c" }
+      { id: 1, title: "AAPL", value: getRandomInt(0.2, 10), color: "#3fc42d" },
+      { id: 2, title: "BABA", value: getRandomInt(0.2, 10), color: "#c33178" },
+      { id: 3, title: "FB", value: getRandomInt(0.2, 10), color: "#423bce" },
+      { id: 4, title: "MSFT", value: getRandomInt(0.2, 10), color: "#c8303b" },
+      { id: 5, title: "NVDA", value: getRandomInt(0.2, 10), color: "#2c2c2c" }
     ];
 
     setData([...data]);
@@ -32,15 +32,20 @@ function App() {
     const data = [
       {
         id: 0,
-        title: "Ayfonkarahisar",
-        value: getRandomInt(10, 90),
+        title: "GOOGL",
+        value: getRandomInt(0.2, 10),
         color: "#50c4fe"
       },
-      { id: 1, title: "Kayseri", value: 38, color: "#3fc42d" },
-      { id: 2, title: "Muğla", value: getRandomInt(10, 90), color: "#c33178" },
-      { id: 3, title: "Uşak", value: getRandomInt(10, 90), color: "#423bce" },
-      { id: 4, title: "Sivas", value: 58, color: "#c8303b" },
-      { id: 5, title: "Konya", value: 16, color: "#2c2c2c" }
+      {
+        id: 1,
+        title: "AAPL",
+        value: getRandomInt(0.2, 10),
+        color: "#3fc42d"
+      },
+      { id: 2, title: "BABA", value: getRandomInt(0.2, 10), color: "#c33178" },
+      { id: 3, title: "FB", value: getRandomInt(0.2, 10), color: "#423bce" },
+      { id: 4, title: "MSFT", value: getRandomInt(0.2, 10), color: "#c8303b" },
+      { id: 5, title: "NVDA", value: getRandomInt(0.2, 10), color: "#2c2c2c" }
     ];
 
     setData([...data]);
