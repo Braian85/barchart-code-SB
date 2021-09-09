@@ -11,24 +11,6 @@ function App() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  function handleChange() {
-    const data = [
-      {
-        id: 0,
-        title: "GOOGL",
-        value: getRandomInt(0.2, 10),
-        color: "#D1B70A"
-      },
-      { id: 1, title: "AAPL", value: getRandomInt(0.2, 10), color: "#DBB20B" },
-      { id: 2, title: "BABA", value: getRandomInt(0.2, 10), color: "#C49000" },
-      { id: 3, title: "FB", value: getRandomInt(0.2, 10), color: "#DB960B" },
-      { id: 4, title: "MSFT", value: getRandomInt(0.2, 10), color: "#D47F00" },
-      { id: 5, title: "NVDA", value: getRandomInt(0.2, 10), color: "#D65F00" }
-    ];
-
-    setData([...data]);
-  }
-
   useEffect(() => {
     const data = [
       {
@@ -52,8 +34,26 @@ function App() {
     setData([...data]);
   }, []);
 
+  function handleChange() {
+    const data = [
+      {
+        id: 0,
+        title: "GOOGL",
+        value: getRandomInt(0.2, 10),
+        color: "#D1B70A"
+      },
+      { id: 1, title: "AAPL", value: getRandomInt(0.2, 10), color: "#DBB20B" },
+      { id: 2, title: "BABA", value: getRandomInt(0.2, 10), color: "#C49000" },
+      { id: 3, title: "FB", value: getRandomInt(0.2, 10), color: "#DB960B" },
+      { id: 4, title: "MSFT", value: getRandomInt(0.2, 10), color: "#D47F00" },
+      { id: 5, title: "NVDA", value: getRandomInt(0.2, 10), color: "#D65F00" }
+    ];
+
+    setData([...data]);
+  }
+
   return (
-    <div>
+    <div className="container">
       <ChartRace
         data={data}
         backgroundColor="#000"
@@ -64,7 +64,7 @@ function App() {
         titleStyle={{ font: "normal 400 10px Arial", color: "#fff" }}
         valueStyle={{
           font: "normal 400 11px Arial",
-          color: "rgba(255,255,255, 0.42)"
+          color: "rgba(255,255,255, 1)"
         }}
       />
 
